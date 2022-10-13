@@ -1,0 +1,93 @@
+<!--Developed by Ashton Nicholson 4/10/2022 -->
+<html>
+
+<head>
+    <meta name="description" content="index Petpal" />
+    <!--meta description-->
+    <meta name="keywords" content="" />
+    <!--meta keywords-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetPal | Welcome</title>
+    <link id="pagestyle" rel="stylesheet" href="styles/style.css" />
+    <!--css stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="" />    
+</head>
+
+<body>
+    <div class="mainBox">
+
+        <!-- Add in the Main Navigation Menu -->
+        <div class="navigationBar">
+            <!-- Options for Icon based LOGO or Image based LOGO *******************-->
+            <p class="navigationLogoIcon"><span><i class="fa fa-user-circle" aria-hidden="true"></i></span></p>
+            <!--<p class="navigationLogo"><span><img class="navigationLogoImage" src="images/logo.png"></img></span></p>-->
+            <p class="navigationTitleName">LOGO</p>
+        </div>
+        <br>
+
+       <!--Page Text Area-->
+        <div class="welcomeScreenMain">
+            <div class="welcomeScreenSection">
+                <p class="pageTitleTextWelcome">Get Started Today With</p>
+                <p class="pageLogoFancy">PetPal</p>
+                <div class="welcomeButton">
+                    <button class= "buttonCustomTitle" onclick="showSignUp();">Log In</button>
+                    <a href="dashboard.html" target ="_self"> <button class= "buttonCustomTitle" >Sign In</button></a>
+                </div>
+            </div>
+            <!--Image/Slideshow area.-->
+            <div class="welcomeScreenSection">
+                <img src="images/cat_welcome.png" alt="Cat Head."></img>
+            </div>            
+        </div>
+
+        <div class="welcomeScreenMain">
+            <div class="featureScreenSection">
+                <i class="fa fa-user-o" id="iconFeature" aria-hidden="true"></i></a></span></p>
+                <p class="featureText">Family Accounts</p>
+                <p class="fancyText">Link your family to all your pets get the whole family involved.</p>
+            </div>
+            <div class="featureScreenSection">
+                <i class="fa fa-calendar" id="iconFeature" aria-hidden="true"></i></a></span></p>
+                <p class="featureText">Scheduling</p>
+                <p class="fancyText">Schedule medications and appointments for your pets.</p>
+            </div>
+            <div class="featureScreenSection">
+                <i class="fa fa-heart-o" id="iconFeature" aria-hidden="true"></i></a></span></p>
+                <p class="featureText">Health</p>
+                <p class="fancyText">A great way to manage your pets health.</p>
+            </div>
+        </div>
+
+    <div class="overlaySignUpBlur" id="overlaySignUpBlur">
+        <div class="overlaySignUp">
+            <div class="overlaySectionForm">
+                <p class="featureText">Log in to PetPal</p>
+                <div class="overlaySectionButtonLocation">
+                    <button class= "buttonCustomTitle" onclick="showSignUp();">&nbsp;X&nbsp;</button>
+                </div>
+                <div class="formSection">
+                    <p class="formText">Email</p>                
+                    <input type="text" placeholder="Email Address" id="Email"></input>
+                    <br></br>                    
+                    <p class="formText">Password</p>                
+                    <input type="password" placeholder="Password" id="Password"></input>                    
+                </div>                                
+                <div class="overlaySectionForm">                    
+                    <p class="forgotText" title="Reset Your Password.">Forgot Password</p>            
+                </div>
+                <div class="overlaySectionForm">
+                    <a href="dashboard.html" target ="_self"><button class= "buttonCustomTitle" onclick="showSignUp()">Log in</button></a>
+                </div>
+                <br></br>
+            </div>
+
+        </div> 
+    </div>
+          
+    <script src="scripts/signUpProtoytype.js"></script>        
+</body>
+
+</html>
