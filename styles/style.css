@@ -575,7 +575,10 @@ a:active {
 .membersProfileSectionImage{
     display: inline-flex;
     border-radius: 10px;
-    padding:10px;        
+    padding:0px;  
+    width: 350px; 
+    height:150px; 
+    overflow: hidden;    
     margin: auto;  
 }
 
