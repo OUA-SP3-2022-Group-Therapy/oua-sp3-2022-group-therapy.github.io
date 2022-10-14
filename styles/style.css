@@ -326,6 +326,11 @@ a:active {
     overflow: hidden;
 }
 
+.upcomingEventsGridItem:hover{
+    border: 2px solid var(--pal_button_border_hover);
+    padding: 9px;
+   }
+
 
 .dashboardUsers {
     display: inline-flex;
@@ -383,7 +388,10 @@ a:active {
     border: 1px solid var(--pal_button_border);
     overflow: scroll;
 }
-
+.dashboardUsersPartition:hover{
+    border: 2px solid var(--pal_button_border_hover);
+    padding: 19px;
+   }
 
 .calendarSection {
     display: inline-flex;
@@ -502,6 +510,10 @@ a:active {
     overflow: scroll;
 }
 
+.familyUserGridItem:hover{
+    border: 2px solid var(--pal_button_border_hover);
+    padding: 19px;
+   }
 
 .card{
     display: block;
@@ -516,6 +528,11 @@ a:active {
     border: 1px solid var(--pal_button_border);
     overflow: scroll;
 }
+
+.card:hover{
+    border: 2px solid var(--pal_button_border_hover);
+    padding: 19px;
+   }
 
 .cardImageCircle{
         background-color: var(--pal_image_placeholder_background);
@@ -559,7 +576,7 @@ a:active {
     display: inline-flex;
     border-radius: 10px;
     padding:10px;        
-    margin: auto;    
+    margin: auto;  
 }
 
 .membersProfileSectionDetails{
@@ -571,6 +588,11 @@ a:active {
     padding:20px;
     margin-top: 10px;    
     text-align: center;
+}
+
+.membersProfileSectionDetails:hover{
+ border: 2px solid var(--pal_button_border);
+ padding:19px;
 }
 
 
