@@ -305,7 +305,7 @@ a:active {
 .upcomingEventsHolder {
     display: inline-flex;
     background-color: var(--pal_button_colour);
-    width: 98%;
+    width: 95%;
     height: 70%;
     margin: auto;
     padding: 10px;
@@ -533,6 +533,47 @@ a:active {
     padding: 10px;
     float:center;    
 }
+
+.membersProfileMain{
+    display: inline-flex;
+    width:100%;   
+    height:auto;
+    text-align: center;
+    
+}
+
+.membersProfileSection{
+    display: inline-block;
+    background-color: var(--pal_button_colour);
+    border: 1px solid var(--pal_button_border);
+    border-radius: 10px;
+    width:430px;
+    height: auto;
+    padding:10px;
+    margin-left:40px;
+    margin-right:40px;
+    
+}
+
+.membersProfileSectionImage{
+    display: inline-flex;
+    border-radius: 10px;
+    padding:10px;        
+    margin: auto;    
+}
+
+.membersProfileSectionDetails{
+    display: block;    
+    border: 1px solid var(--pal_button_border);
+    border-radius: 10px;
+    width:auto;
+    height: auto;
+    padding:20px;
+    margin-top: 10px;    
+    text-align: center;
+}
+
+
 
 .lineDivider{
     width: 100%;
