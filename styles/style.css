@@ -64,6 +64,10 @@
 
     /* section colours */
     --pal_section_background: rgba(62, 56, 73, 0.144);
+    /* chart colours */
+    --pal_chart_lines:  rgb(255, 255, 255);
+    --pal_chart_points:  rgb(14, 14, 65);
+    --pal_chart_grid: rgb(204, 198, 199);
 }
 
 
@@ -598,8 +602,19 @@ a:active {
  padding:19px;
 }
 
+.trendBox{
+    display: block;
+    background-color: var(--pal_button_colour);
+    width: 100%;
+    height: 350px;    
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--pal_button_border);
+    overflow: scroll;
+}
 
 
+/* Dividers */
 .lineDivider{
     width: 100%;
     height: 1px;
@@ -840,3 +855,73 @@ input[type='password']{
     margin-left: 10px;
     margin-top: 10px;
 }
+
+input[type='number']{
+    color: var(--pal_button_text);
+    background-color: var(--pal_button_colour);
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 18px;
+    border: 1px solid var(--pal_button_border);
+    text-align: left;
+    margin: auto;
+    overflow: hidden;
+    height: 30px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* chart */
+.percentage:after {
+    content: "";
+    display: block;
+    background-color: #3d9970;
+  }
+  .percentage-20:after {
+    width: 20%;
+  }
+  .percentage-30:after {
+    width: 30%;
+  }
+
+  /* chart */
+  .css-chart {
+    border-bottom: 2px solid var(--pal_chart_grid);
+    border-left: 2px solid var(--pal_chart_grid);
+    display: inline-block;
+    height: var(--widget-size);
+    margin: 5em 3em 1em 0em;
+    padding: 0;
+    position: relative;
+    width: var(--widget-size);
+  }
+  
+  .line-chart {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .data-point {
+    background-color:var(--pal_chart_points);
+    border: 1px solid var(--pal_button_border);
+    border-radius: 1000%;
+    bottom: calc(var(--y) - 4px);
+    height: 12px;
+    left: calc(var(--x) - 7px);
+    position: absolute;
+    width: 12px;
+    z-index: 1;
+  }
+  
+  .line-segment {
+    background-color: var(--pal_chart_lines);
+    bottom: var(--y);
+    height: 3px;
+    left: var(--x);
+    position: absolute;
+    transform: rotate(calc(var(--angle) * 1deg));
+    transform-origin: left bottom;
+    width: calc(var(--hypotenuse) * 1px);
+  }
