@@ -632,6 +632,13 @@ a:active {
     background-color: var(--pal_navigation_divider);
 }
 
+.dividerSection{
+    width: 100%;
+    height: 1px;
+    margin: auto;   
+    margin-bottom: 40px;    
+    ;
+}
 
 /*Custom Text Elements */
 .pageTitleTextWelcome {
