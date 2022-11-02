@@ -1,0 +1,68 @@
+<html>
+    <!-- Developed by Bronagh Falloon on 28/10/2022 -->
+<head>
+        <meta name="description" content="signup Petpal" />
+        <!--meta description-->
+        <meta name="keywords" content="" />
+        <!--meta keywords-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PetPal | Signup</title>
+        <!--CHANGE BACK href="~/css/style.css" --> <link id="pagestyle" rel="stylesheet" href="styles/style.css" />
+        <!--css stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="icon" href="" />    
+</head>
+
+
+<body>
+    <div class="mainBox">
+
+        <!-- Add in the Main Navigation Menu -->
+        <div class="navigationBar">
+            <!-- Options for Icon based LOGO or Image based LOGO *******************-->
+            <p class="navigationLogoIcon"><span><i class="fa fa-user-circle" aria-hidden="true"></i></span></p>
+            <!--<p class="navigationLogo"><span><img class="navigationLogoImage" src="images/logo.png"></img></span></p>-->
+            <p class="navigationTitleName">LOGO</p>
+        </div>
+        <br>
+
+       <!--Page Text Area-->
+        <div class="welcomeScreenMain">
+            <div class="welcomeScreenSection">
+                <p class="pageTitleTextWelcome">Sign up to</p>
+                <p class="pageLogoFancy">PetPal</p>
+
+                <!--Form Buttons-->
+                <form class="signUpForm" id="form">
+                <p class="formTextLarge">Email &nbsp;</p>
+                <input type="text" id="emailAddress" style="margin-bottom:8px;"> </input>
+                <br>
+                <p class="formTextLarge">Password &nbsp;</p>
+                <input type="password" id="password" style=" margin-bottom:8px;"> </input>
+                <p class="formTextLarge" >Confirm Password &nbsp;</p>
+
+                <input type="password" id="passwordConfirm" style="margin-bottom:8px;"> </input>
+
+                </form>
+                    
+
+                
+            <!--SignUp Button-->
+            <div>
+                <button class="buttonCustomTitle" id="signUpButton">&nbsp; Sign Up &nbsp;</button>
+            </div>
+                
+            </div>
+            <!--Image/Slideshow area.-->
+            <div class="welcomeScreenSection">
+                <img src="images/cat_welcome.png" alt="Cat Head."></img>
+            </div>            
+        </div>
+    </div>
+
+    <script src="scripts/Validation.js"></script>  
+    <!--CHANGE ~/js/Validation.js-->
+</body>
+</html>
+
