@@ -900,6 +900,22 @@ input[type='number']{
     margin-top: 10px;
 }
 
+input[type='email']{
+    color: var(--pal_button_text);
+    background-color: var(--pal_button_colour);
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 18px;
+    border: 1px solid var(--pal_button_border);
+    text-align: left;
+    margin: auto;
+    overflow: hidden;
+    height: 30px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 /* chart */
 .percentage:after {
     content: "";

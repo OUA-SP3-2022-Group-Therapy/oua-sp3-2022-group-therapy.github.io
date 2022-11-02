@@ -32,25 +32,27 @@
             <div class="welcomeScreenSection">
                 <p class="pageTitleTextWelcome">Sign up to</p>
                 <p class="pageLogoFancy">PetPal</p>
-
+                <br>
                 <!--Form Buttons-->
-                <form class="signUpForm" id="form">
+                <form class="signUpForm" id="form" name="signupForm">
                 <p class="formTextLarge">Email &nbsp;</p>
-                <input type="text" id="emailAddress" style="margin-bottom:8px;"> </input>
+                <input type="email" id="emailAddress" name="email" style="margin-bottom:8px;"> </input>
                 <br>
                 <p class="formTextLarge">Password &nbsp;</p>
-                <input type="password" id="password" style=" margin-bottom:8px;"> </input>
+                <input type="password" id="password" name="pw" style=" margin-bottom:8px;"> </input>
                 <p class="formTextLarge" >Confirm Password &nbsp;</p>
 
-                <input type="password" id="passwordConfirm" style="margin-bottom:8px;"> </input>
-
+                <input type="password" id="passwordConfirm" name="cpw" style="margin-bottom:8px;"> </input>
+                <br></br>
+                <p class ="pageLogoFancy" style="font-size:1em; text-align: left;" id="messageArea">Please enter in details.</p>
+                    <p id="debug"></p>
                 </form>
                     
 
                 
             <!--SignUp Button-->
             <div>
-                <button class="buttonCustomTitle" id="signUpButton">&nbsp; Sign Up &nbsp;</button>
+                <button class="buttonCustomTitle" id="signUpButton" type="submit">&nbsp; Sign Up &nbsp;</button>
             </div>
                 
             </div>
