@@ -12,13 +12,15 @@ function validate(){
     pwcOk = false;
 
     let checkEmail = emailAddress.value;
-    let checkPw = password.value;
-    let checkPwc = confirmPassword.value;
-   
+    
     if(checkEmail == ""){
        messageArea.textContent = "Email cannot be blank.";      
     } else {
-        if(checkStringRegex(0,checkEmail) == true){emailOk = true;messageArea.textContent = ""; }   
+        if(checkStringRegex(0,checkEmail) == true) {
+            emailOk = true;
+            messageArea.textContent = ""; 
+            checkStringRegex(1,"");    
+        }   
     }
 
 }
@@ -37,6 +39,24 @@ function checkStringRegex(typeOfElement,stringToCheck){
         break;
 
         case 1: //PW.
+        //Requires HTML to add  <form name="myForm" onsubmit="return validateForm()" method="post">
+        let x = password.value;
+        let y = confirmPassword.value;
+        var validated = false;
+
+        //Required field!.
+        if (x == "" || y == "") {messageArea.textContent ="Require Both Password/Confirm field."; return false;} 
+        //Not the same!       
+        if(y != x ){messageArea.textContent ="Both Passwords Are Not The Same."; return false;}
+        //Means we have a match.   
+        if(y == x){messageArea.textContent ="Success"; validated = true;}  
+
+        //charactor count.
+        if(validated == true){
+            if(x.length < 7){messageArea.textContent ="Password length must be atleast 8 characters.";validated == false;return false;}
+            if(x.length > 15){messageArea.textContent ="Password length must not exceed 15 characters.";validated == false;return false;}             
+            return true;           
+        }
         break;
         default:
     }
